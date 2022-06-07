@@ -1,0 +1,4 @@
+import json
+dict = '{"K1":"val1","K2":"val2"}'
+json_result = json.loads(dict)
+print(json_result)
