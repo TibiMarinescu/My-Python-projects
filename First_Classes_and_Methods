@@ -1,0 +1,15 @@
+class A:
+    def __init__(self):
+        print("This is A class constructor")
+
+    def startBrowserA(self):
+        print("A Class Method")
+        print("Starting browser")
+
+class B:
+    def __init__(self):
+        print("This is B class constructor")
+
+    def startBrowserB(self):
+        print("B Class Method")
+        print("Starting browser")
