@@ -1,0 +1,17 @@
+import requests
+
+#API URL
+url = "https://reqres.in/api/users?page=2"
+
+#Send GET request
+response = requests.get(url)
+print(response.status_code)
+#Validate status code
+assert response.status_code == 200
+
+#Fetch response header
+print(response.headers)
+print(response.content)
+print(response.headers.get('Date'))
+print(response.headers.get('Servers'))
+print(response.cookies)
