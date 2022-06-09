@@ -1,0 +1,18 @@
+import requests
+import json
+import jsonpath
+
+url = 'https://reqres.in/api/users/2'
+
+#Read Input from file
+file = open('C:\\Users\\tibi\\Documents\\Tasks Management\\JSON.txt','r')
+
+json_input = file.read()
+
+#Import to JSON
+json_import = json.loads(json_input)
+
+#PUT
+a = requests.put(url,json_import)
+
+assert a.status_code == 200
