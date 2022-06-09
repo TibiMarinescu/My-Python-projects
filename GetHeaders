@@ -1,0 +1,7 @@
+import requests
+headerdata = {"T1":"FirstHeader","T2":"SecondHeader"}
+a = requests.get('https://httpbin.org/get', headers = headerdata)
+print(a.text)
+
+
+
