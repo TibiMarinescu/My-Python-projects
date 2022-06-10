@@ -1,0 +1,19 @@
+import pytest
+
+a = 100
+actual_result = 100
+@pytest.fixture(scope="module")
+def fixture_code():
+    print("This is our Fixture code that will execute")
+    print("------------------------------------------")
+    yield
+    print("Done")
+
+@pytest.mark.testcase001
+def test_TC_001_Login_Logout_Testing(fixture_code):
+    print("This is our test case code")
+    assert actual_result == 100
+
+@pytest.mark.testcase002
+def test_TC_001_Login_Logout_Testing_2(fixture_code):
+    print("This is our test case 2")
