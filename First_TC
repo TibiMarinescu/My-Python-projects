@@ -1,0 +1,7 @@
+import pytest
+@pytest.mark.skip
+def test_TC_001_Login_Logout_Testing():
+    print("This is our test case code")
+
+def test_TC_001_Login_Logout_Testing_2():
+    print("This is our test case 2")
