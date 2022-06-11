@@ -1,0 +1,21 @@
+import requests
+import json
+import jsonpath
+
+def test_Add_New_Data():
+  API_URL = "http://thetestingworldapi.com/api/studentDetails"
+  f = open("C:\\Users\\tibi\\RequestJSON.json",'r')
+  load_json = json.loads(f.read())
+  request_API = requests.post(API_URL,load_json)
+  print(request_API.text)
+
+#Run pytest end-to-end-testing-API.py -s
+
+#To check a field value of a JSON file
+id = jsonpath.jsonpath(request_API.json(),'id')
+print(id[0])
+
+Address_API_URL = "http://thetestingworldapi.com/api/technicalskills.json"
+f = open("C:\\Users\\tibi\\TechJSON.json",'r')
+load_json = json.loads(f.read())
+request_API = requests.post(Tech_API_URL, load_json)
