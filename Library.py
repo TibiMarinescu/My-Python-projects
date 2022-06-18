@@ -19,3 +19,13 @@ class Common:
   def fetch_column_count(self, FileNamePath,SheetName):
     max_columns = sh.max_column
     return max_columns
+   
+   def update_request_with_data(self, rowNumber, jsonRequest, keyList):
+      c = sh.max_column
+      for i in range(1, c+1):
+         cell = sh.cell(row = rowNumber, column = i)
+         jsonRequest[keyList[i-1]] = cell.value
+      return jsonRequest
+   
+   
+         
