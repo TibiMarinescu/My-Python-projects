@@ -1,0 +1,62 @@
+#Git
+
+#%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%Create user and email in Git%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+#git config --global user.name ""
+#git config user.name
+
+#git config --global user.email ""
+#git config user.email
+
+#git config --list
+
+#%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%Create local repository%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+#clear
+
+#cd C:
+
+#Create folder: mkdir
+# mkdir CodeRepository
+
+#Display path
+#pwd
+
+#Create local repository
+#git init
+
+#Type of files in Gi: Untracked, Staged, Tracked
+
+#To check the files in a local repository
+#git status
+
+#To move to the staged phase:
+#git add Fr_Gr.txt
+
+#To move all files in the folder that are currently Untracked to Staged phase:
+#git add .
+
+#To move the files from the Staged phase to the Tracked stage
+#git commit -m "Commit all files"
+
+#To restore a file from Staged to Untracked
+#git restore --staged File
+
+#To display all commits
+#git log
+
+#To check what has been modified in a file
+#git diff file
+
+#To undo the modifications from a previous version in a file
+#git checkout -- File
+
+#To check if there is a remote repository
+#git check -v
+
+#To check if there is a remote repository linked
+git remove -v
+
+#To link a local repository with a remote repository
+git remote add origin "https://github.com/TibiMarinescu/My-Python-projects" 
+
+#To send data to remote repository
+git push origin master
