@@ -3,7 +3,7 @@ ______________________________________________________
 *Prezent/Viitor/imperativ                    = prezent
 e/es/e/ons/ez/ent-R+ai/as/a/ons/ez/ont
 ______________________________________________________
-Conditional prezent                          =Imperfectul
+Conditional ++modificare prezent                          =Imperfectul
 (R+ais/ais/ait/ions/iez/aient)                (-ais,ais, ait,ions, iez,aient)
 _______________________________________________________________________
 Conditional passé                           =Mai mult ca perfectul
